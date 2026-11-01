@@ -12,3 +12,6 @@ Aplikacija **Scrollview_Android_Studio** je namenjena prikazu dolgih besedilnih 
 - **Jezik:** Java
 - **Orodje:** Android Studio
 - **Glavni gradniki:** `ScrollView`, `LinearLayout`, `TextView`, `Button`, `Toast`
+
+  <img width="250" alt="image" src="https://github.com/user-attachments/assets/c3358722-a673-41c6-afbf-f430dd223188" />
+
