@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Navpični vsebnik za celotno vsebino -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Glavni naslov aplikacije -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:padding="16dp"
+            android:text="@string/article_title"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Vodoravni vsebnik za dva stolpca z več prostora -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <!-- Levi ožji stolpec za podnaslov -->
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="12dp"
+                android:text="@string/subheading"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="6dp" />
+
+            <!-- Desni širši stolpec za glavno besedilo (z več placa med vrsticami) -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/article_text"
+                android:textSize="14sp"
+                android:lineSpacingExtra="6dp" />
+
+        </LinearLayout>
+
+        <!-- Gumb za oddajo komentarja na samem dnu dolgega članka -->
+        <Button
+            android:id="@+id/button_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:onClick="displayToast"
+            android:text="@string/add_comment" />
+
+    </LinearLayout>
+</ScrollView>
